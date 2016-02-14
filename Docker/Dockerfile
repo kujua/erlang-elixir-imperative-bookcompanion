@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.16
+FROM phusion/baseimage:0.9.18
 MAINTAINER Wolfgang Loder @wolfgang_loder
 
 ENV REFRESHED_AT 2015-04-08
@@ -14,8 +14,8 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Set versions
-ENV ERLANG_VERSION=1:17.5
-ENV ELIXIR_VERSION=1.0.4
+ENV ERLANG_VERSION=1:18.2
+ENV ELIXIR_VERSION=1.2.1
 
 WORKDIR /tmp
 
