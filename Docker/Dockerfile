@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.9.18
 MAINTAINER Wolfgang Loder @wolfgang_loder
 
-ENV REFRESHED_AT 2015-04-08
+ENV REFRESHED_AT 2016-02-18
 
 RUN echo /root /etc/container_environment/HOME
 
