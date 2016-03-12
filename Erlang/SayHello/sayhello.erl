@@ -8,7 +8,7 @@
 %%% Machine 1: erl -sname precipient -setcookie scookie
 %%%            sayhello:start_recipient().
 %%% Machine 2: erl -sname psayhello -setcookie scookie
-%%%            sayhello:start_sayhello("precipient@wlmb").
+%%%            sayhello:start_sayhello("precipient@machinename").
 %%% @end
 %%%-------------------------------------------------------------------
 -module(sayhello).
@@ -21,6 +21,7 @@
 say_hello(_, 0, Node) ->
   io:format("Process arity 3 'say_hello' finished~n", []),
   {precipient, Node} ! finished;
+
 say_hello(What, Times, Node) ->
   io:format("3: ~p~n", [What]),
   say_hello(What, Times - 1, Node).

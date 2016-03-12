@@ -8,7 +8,7 @@
 -module(listsexample).
 -author("Wolfgang Loder").
 
--export([improper_list/0, f_parsing_list/1,setup_ingredient_list/0]).
+-export([improper_list/0, f_parsing_list/1,setup_ingredient_list/1]).
 
 improper_list() ->
 	L1 = [1 | someatom].
