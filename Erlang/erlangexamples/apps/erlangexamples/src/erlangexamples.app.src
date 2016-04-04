@@ -1,0 +1,15 @@
+{application, erlangexamples,
+ [{description, "Erlang examples for book 'Erlang and Elixir for Imperative Programmers'"},
+  {vsn, "0.9.0"},
+  {registered, [erlangexamples]},
+  {mod, { erlangexamples_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
