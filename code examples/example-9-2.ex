@@ -16,7 +16,7 @@ def start_recipient do
 end
 
 def start_sayhello() do
-  spawn(SayHello, :say_hello, ["Hello", 4])
+  spawn(SayHello, :say_hello, ["Hello", 2])
   send :global.whereis_name(:precipient), :log
 end
 

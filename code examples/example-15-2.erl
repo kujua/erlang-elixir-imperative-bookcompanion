@@ -1,10 +1,12 @@
--define(MACRO1(X, Y), {a, X, b, Y}).
+-define (FILETESTCONTENT, <<"test_from_gfslib">>).
+-define (FILETEST, "filetest").
+-define (DARDB, "dar").
 
-bar(X) ->
-    ?MACRO1(a, b),
-    ?MACRO1(X, 123)
+read_binary_test() ->
+    R = dar_gfslib_process_files:read_binary(?FILETEST,?DARDB),
+    ?assertEqual({ok,?FILETESTCONTENT}, R).
 
-expanded to:
-bar(X) ->
-    {a,a,b,b},
-    {a,X,b,123}.
+% expanded to:
+read_binary_test() ->
+    R = dar_gfslib_process_files:read_binary("filetest","dar"),
+    ?assertEqual({ok,<<"test_from_gfslib">>}, R).

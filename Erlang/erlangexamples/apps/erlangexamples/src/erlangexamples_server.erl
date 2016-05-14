@@ -38,7 +38,7 @@ handle_cast(_Msg, State) ->
     {noreply, State}.
 
 handle_info(_Info, State) ->
-    {noreply, State}.
+    {noreply, [1]}.
 
 terminate(_Reason, _State) ->
     ok.

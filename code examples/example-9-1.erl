@@ -8,7 +8,7 @@
 %%% Machine 1: erl -sname precipient -setcookie scookie
 %%%            sayhello:start_recipient().
 %%% Machine 2: erl -sname psayhello -setcookie scookie
-%%%            sayhello:start_sayhello("precipient@machinename").
+%%%            sayhello:start_sayhello('precipient@machinename').
 %%% @end
 %%%-------------------------------------------------------------------
 -module(sayhello).

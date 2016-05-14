@@ -1,4 +1,4 @@
-Erlang/OTP 17 [erts-6.4] [source] [64-bit] [async-threads:10] [kernel-poll:false]
+Erlang/OTP 18 [erts-7.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
 
 Eshell V6.4  (abort with ^G)
 1> Double = fun(X) -> 2 * X end.

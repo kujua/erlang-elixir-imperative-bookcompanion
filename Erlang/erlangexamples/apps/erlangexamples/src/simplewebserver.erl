@@ -1,7 +1,7 @@
 %%%-------------------------------------------------------------------
 %%% @author Wolfgang Loder
 %%% @doc
-%%% httpc; https://github.com/esl/lhttpc
+%%% call http://localhost:4602/www/simplewebserver/service
 %%% @end
 %%%-------------------------------------------------------------------
 -module(simplewebserver).
@@ -23,7 +23,7 @@ start() ->
     mod_log,
     mod_disk_log
    ]},
-  {port,50601},
+  {port,4242},
   {server_name,"simplewebserver"},
   {server_root,"."},
   {document_root,"."},

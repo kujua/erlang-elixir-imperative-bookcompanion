@@ -9,7 +9,13 @@
 -module(listsexample).
 -author("Wolfgang Loder").
 
--export([improper_list/0, f_parsing_list/1,setup_ingredient_list/1]).
+-export([
+      improper_list/0,
+      f_parsing_list/1,
+      setup_ingredient_list/1,
+      append/2,
+      comprehension_ex1/0
+    ]).
 
 improper_list() ->
 	[1 | someatom].
@@ -24,3 +30,11 @@ f_parsing_list(X) ->
 
 setup_ingredient_list(dish) ->
 		[{egg,2,piece},{butter,1,teaspoon}].
+
+append([H|T], Tail) ->
+    [H|append(T, Tail)];
+append([], Tail) ->
+    Tail.
+
+comprehension_ex1() ->
+  [I*10 || I <- lists:seq(1,10), I rem 2 == 0].
