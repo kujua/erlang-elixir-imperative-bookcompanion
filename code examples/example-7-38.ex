@@ -1,0 +1,1 @@
+DarImagelib.Mixfile.getconstant(:respath)

@@ -1,0 +1,2 @@
+-type returnvalue() :: {ok} | {error}.
+-export_type([returnvalue/0]).

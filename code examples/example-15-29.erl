@@ -1,0 +1,2 @@
+-define(LIMIT, 10000).
+-define(FONT, "Courier")

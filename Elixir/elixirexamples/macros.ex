@@ -6,4 +6,12 @@ defmodule Macros do
   def is_even?(n) do
     even?(n)
   end
+
+  defmacro font do
+    "Courier"
+  end
+
+  def show_font do
+    font
+  end
 end

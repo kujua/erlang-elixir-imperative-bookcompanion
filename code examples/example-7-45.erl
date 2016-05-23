@@ -1,0 +1,1 @@
+-spec numberfunction(number()) -> returnvalue().
