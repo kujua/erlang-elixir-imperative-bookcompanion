@@ -1,11 +1,10 @@
 %%%-------------------------------------------------------------------
 %%% @author Wolfgang Loder
 %%% @doc
-%%% call http://localhost:4602/www/simplewebserver/service
+%%% call http://localhost:4242/www/simplewebserver/service
 %%% @end
 %%%-------------------------------------------------------------------
 -module(simplewebserver).
--author("Wolfgang Loder").
 
 -export([start/0,service/3]).
 

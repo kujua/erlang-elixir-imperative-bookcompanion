@@ -1,0 +1,8 @@
+Lager.debug "Debug message"
+Lager.info "Info message"
+Lager.notice "Notice message"
+Lager.warning "Warning message"
+Lager.error "Error message"
+Lager.critical "Critical message"
+Lager.alert "Alert message"
+Lager.emergency "Emergency message"

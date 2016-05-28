@@ -1,0 +1,18 @@
+{relx, [{release, { darapi, "0.1.0" },
+         [
+          lager,
+          cowboy,
+          jsone,
+          uuid,
+          darapi,
+          sasl,
+          daractors]},
+
+        {sys_config, "./config/sys.config"},
+        {vm_args, "./config/vm.args"},
+
+        {dev_mode, true},
+        {include_erts, false},
+
+        {extended_start_script, true}]
+}.

@@ -1,0 +1,2 @@
+2016-05-26 08:57:10.330 [info] <0.335.0>@darapi_handler_assets:from_json:61 from_json: Method<<"POST">>
+2016-05-26 08:57:10.330 [error] <0.335.0>@darapi_handler_assets:from_json:62 from_json: Method<<"POST">>

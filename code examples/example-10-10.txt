@@ -1,0 +1,29 @@
+{erl_opts, [debug_info]}.
+{deps, [
+  {cowboy, {git, "git://github.com/ninenines/cowboy.git", {tag, "1.0.4"}}},
+  {lager, {git, "git://github.com/basho/lager.git", {tag, "2.2.2"}}},
+  uuid,
+  jsone,
+  daractors
+]}.
+
+{relx, [{release, { darapi, "0.1.0" },
+         [
+          lager,
+          cowboy,
+          jsone,
+          uuid,
+          darapi,
+          sasl,
+          daractors]},
+        {sys_config, "./config/sys.config"},
+        {vm_args, "./config/vm.args"},
+        {dev_mode, true},
+        {include_erts, false},
+        {extended_start_script, true}]
+}.
+
+{profiles, [{prod, [{relx, [{dev_mode, false},
+                            {include_erts, true}]}]
+            }]
+}.

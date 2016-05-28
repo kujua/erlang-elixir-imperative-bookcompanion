@@ -1,3 +1,10 @@
+%%%-------------------------------------------------------------------
+%%% @author Wolfgang Loder
+%%% @doc
+%%% inets:start().
+%%% browse http://localhost:4242/www/simplewebserver/service
+%%% @end
+%%%-------------------------------------------------------------------
 -module(simplewebserver).
 
 -export([start/0,service/3]).
@@ -5,10 +12,18 @@
 start() ->
  inets:start(httpd, [
    {modules, [
-      mod_alias,mod_auth,mod_esi,mod_actions,mod_cgi,
-      mod_dir,mod_get,mod_head,mod_log,mod_disk_log
+    mod_alias,
+    mod_auth,
+    mod_esi,
+    mod_actions,
+    mod_cgi,
+    mod_dir,
+    mod_get,
+    mod_head,
+    mod_log,
+    mod_disk_log
    ]},
-  {port,4602},
+  {port,4242},
   {server_name,"simplewebserver"},
   {server_root,"."},
   {document_root,"."},
