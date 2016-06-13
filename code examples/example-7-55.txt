@@ -1,0 +1,24 @@
+$ rebar3 eunit
+===> Verifying dependencies...
+===> Performing EUnit tests...
+.F.
+Failures:
+  1) fixture_tests:fixture2_test_/0: assert true
+     Failure/Error: ?assert(false)
+       expected: true
+            got: false
+     %% fixture_tests.erl:36:in 'fixture_tests:-fixture2_test_/0-fun-2-/0'
+     Output:
+     Output:
+
+Top 3 slowest tests (0.000 seconds, 0.0% of total time):
+  fixture_tests:fixture1_test_/0:21
+    0.000 seconds
+  fixture_tests:fixture2_test_/0: assert 42
+    0.000 seconds
+  fixture_tests:fixture2_test_/0: assert true
+    0.000 seconds
+
+Finished in 0.021 seconds
+3 tests, 1 failures
+===> Error running tests

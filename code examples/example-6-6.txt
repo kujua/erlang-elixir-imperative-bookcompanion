@@ -1,0 +1,23 @@
+$ elixir
+Usage: elixir [options] [.exs file] [data]
+
+  -v                Prints version and exits
+  -e "command"      Evaluates the given command (*)
+  -r "file"         Requires the given files/patterns (*)
+  -S "script"       Finds and executes the given script
+  -pr "file"        Requires the given files/patterns in parallel (*)
+  -pa "path"        Prepends the given path to Erlang code path (*)
+  -pz "path"        Appends the given path to Erlang code path (*)
+  --app "app"       Start the given app and its dependencies (*)
+  --erl "switches"  Switches to be passed down to Erlang (*)
+  --name "name"     Makes and assigns a name to the distributed node
+  --sname "name"    Makes and assigns a short name to the distributed node
+  --cookie "cookie" Sets a cookie for this distributed node
+  --hidden          Makes a hidden node
+  --detached        Starts the Erlang VM detached from console
+  --werl            Uses Erlang's Windows shell GUI (Windows only)
+  --no-halt         Does not halt the Erlang VM after execution
+
+** Options marked with (*) can be given more than once
+** Options given after the .exs file or -- are passed down to the executed code
+** Options can be passed to the Erlang runtime using ELIXIR_ERL_OPTIONS or --erl

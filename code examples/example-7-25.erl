@@ -1,4 +1,9 @@
-1> erlangexamples_client:pm().
-return sent:
-rep {ret,always_return_42,[55,true]}
-ok
+1> mapsexample:pizza_toppings_map().
+#{{ham,slices} => 6,
+  {mozzarella,slices} => 8,
+  {mushroom,spoon} => 2,
+  {onion,spoon} => 2,
+  {onionring,spoon} => 2,
+  {sausage,piece} => 1,
+  {spinach,spoon} => 2,
+  {tomatosauce,spoon} => 3}

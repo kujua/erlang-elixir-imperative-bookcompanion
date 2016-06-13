@@ -1,1 +1,1 @@
-erlangexamples_client:pm().
+mapsexample:pizza_toppings_map().
