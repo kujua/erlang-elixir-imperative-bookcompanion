@@ -11,8 +11,9 @@ defmodule DarImagelib.Mixfile do
       deps: deps,
       dialyzer:
       [
-         plt_apps: ["erts","kernel", "stdlib", "crypto", "public_key", "mnesia"],
-         flags: ["-Wunmatched_returns","-Werror_handling","-Wrace_conditions", "-Wno_opaque"],
+         plt_apps: ["erts","kernel","stdlib","crypto","public_key","mnesia"],
+         flags: ["-Wunmatched_returns","-Werror_handling",
+                 "-Wrace_conditions", "-Wno_opaque"],
          paths: ["."]
       ]
     ]
@@ -25,16 +26,17 @@ defmodule DarImagelib.Mixfile do
 
   defp deps do
     [
-        {:mogrify, path: "~/Projects/mogrify"},
-        {:dar_model, path: "~/Projects/creative-common-dar/Erlang/Libs/dar_model"},
-        {:ex_doc, "~> 0.11", only: :dev},
-        {:dialyxir, "~> 0.3", only: [:dev]}
+      {:mogrify,path: "~/Projects/mogrify"},
+      {:dar_model,path: "~/Projects/creative-common-dar/Erlang/Libs/dar_model"},
+      {:ex_doc, "~> 0.11", only: :dev},
+      {:dialyxir, "~> 0.3", only: [:dev]}
     ]
   end
 
   def getconstant(c) do
     globdefs = %{
-      respath: "~/Projects/creative-common-dar/Elixir/Libs/dar_imagelib/test/res/"
+      respath:
+        "~/Projects/creative-common-dar/Elixir/Libs/dar_imagelib/test/res/"
     }
     case c do
       :respath -> globdefs.respath

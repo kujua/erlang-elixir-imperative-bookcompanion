@@ -27,7 +27,6 @@ all() ->
 http_get_home_message(_Config) ->
     {ok, {{_Version, 200, _ReasonPhrase}, _Headers, Body}} =
         httpc:request(get, {"http://localhost:8402", []}, [], []),
-    ct:pal(Body),
     ?assertEqual(Body, ?BODY_HOME).
 
 http_test_getassets(_Config) ->
