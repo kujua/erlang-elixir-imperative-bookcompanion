@@ -1,12 +1,4 @@
-@moduledoc """
-Author: Wolfgang Loder
-Email: wolfgang.loder@googlemail.com
-Date: June 2016
-Book Erlang and Elixir for Imperative Programmers, Chapter 14
-"""
-@doc """
-Continuation Passing Style Examples
-"""
+
 
 defmodule ContinuationPassing do
     def initiate(a) do

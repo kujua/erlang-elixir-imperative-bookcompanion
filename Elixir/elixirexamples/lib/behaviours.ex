@@ -1,17 +1,4 @@
-@moduledoc """
-Author: Wolfgang Loder
-Email: wolfgang.loder@googlemail.com
-Date: June 2016
-Book Erlang and Elixir for Imperative Programmers, Chapter 15
-"""
-@doc """
-Behaviour Examples
-"""
 
-
-defmodule Stewtype do
-  defstruct stewtype: :veg, ingredients: []
-end
 
 defmodule Printer do
   @type stew :: Stewtype.t

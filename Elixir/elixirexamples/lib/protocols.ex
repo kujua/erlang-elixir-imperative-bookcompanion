@@ -1,6 +1,4 @@
-defmodule Stewtype do
-  defstruct stewtype: :veg, ingredients: []
-end
+
 
 defmodule Protocols do
   defprotocol Stew do
