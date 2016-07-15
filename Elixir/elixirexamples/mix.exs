@@ -4,8 +4,8 @@ defmodule ElixirExamples.Mixfile do
   def project do
   [
     app: :elixirexamples,
-    version: "0.0.1",
-    elixir: "~> 1.1",
+    version: "1.0.0",
+    elixir: "~> 1.3",
     build_embedded: Mix.env == :prod,
     start_permanent: Mix.env == :prod,
     deps: deps,

@@ -1,29 +1,29 @@
 defmodule RecipeMixins do
   defmacro __using__(_opts) do
     quote location: :keep do
-      def print(l) do
-        IO.puts(inspect l)
+      def print(l, dev \\ :stdio) do
+        IO.puts(dev, inspect l)
       end
-      defoverridable [print: 1]
+      defoverridable [print: 2]
     end
   end
 end
 
-defmodule VegetableStew do
+defmodule VegStewM do
   use RecipeMixins
-  def cook() do
+  def cook(dev \\ :stdio) do
     l = %{{:carot,:piece} => 3,
       {:onion,:piece} => 2,
       {:tomato,:piece} => 2
      }
     # do something
-    print(l)
+    print(l, dev)
   end
 end
 
-defmodule BeefStew do
+defmodule BeefStewM do
   use RecipeMixins
-  def cook() do
+  def cook(dev \\ :stdio) do
     l = %{{:carot,:piece} => 3,
       {:onion,:piece} => 2,
       {:tomato,:piece} => 2,
@@ -31,10 +31,10 @@ defmodule BeefStew do
      }
     # do something
     %{{:beef,:grams} => g} = l
-    print(g)
+    print(g, dev)
   end
 
-  def print(g) do
-    IO.puts(("How much beef? " <> inspect g) <> " grams")
+  def print(g, dev) do
+    IO.puts(dev, ("How much beef? " <> inspect g) <> " grams")
   end
 end

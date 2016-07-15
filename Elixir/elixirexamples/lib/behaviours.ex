@@ -1,11 +1,9 @@
-
-
 defmodule Printer do
   @type stew :: Stewtype.t
   @callback print(stew) :: {:ok, term} | {:error, term}
 end
 
-defmodule VegStew do
+defmodule VegStewB do
   @behaviour Printer
   def print(s) do
     case s.stewtype do
@@ -18,7 +16,7 @@ defmodule VegStew do
   end
 end
 
-defmodule BeefStew do
+defmodule BeefStewB do
   @behaviour Printer
   def print(s) do
     case s.stewtype do
