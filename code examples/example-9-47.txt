@@ -1,0 +1,4 @@
+iex(1)> is_atom SayHello
+true
+iex(2)> to_string SayHello
+"Elixir.SayHello"

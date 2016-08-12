@@ -1,0 +1,18 @@
+version: '2'
+services:
+  elixir:
+    image: elixir
+    links:
+      - postgres
+      - mongo
+  postgres:
+    image: postgres
+    ports:
+     - "5432:5432"
+    environment:
+     POSTGRES_PASSWORD: postgres
+     POSTGRES_USER: postgres
+  mongo:
+    image: mongo
+    ports:
+     - "27017:27017"

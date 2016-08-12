@@ -20,7 +20,14 @@ defmodule ElixirExamples.Mixfile do
 
   def application do
     [
-        applications: [:logger, :timex]
+        applications: [
+                        :logger,
+                        :timex,
+                        :calendar,
+                        :poison,
+                        :gen_stage,
+                        :dialyxir
+                      ]
     ]
   end
 
@@ -29,7 +36,9 @@ defmodule ElixirExamples.Mixfile do
       {:dialyxir, "~> 0.3", only: [:dev]},
       {:poison, "~> 2.0"},
       {:calendar, "~> 0.16.0"},
-      {:timex, "~> 2.1.5"}
+      {:timex, "~> 2.1.5"},
+      {:gen_stage, "~> 0.5"},
+      {:exrm, "~> 1.0.8"}
     ]
   end
 end

@@ -1,0 +1,8 @@
+{relx, [{release, { erlangexamples, "1.0.0" },
+            [erlangexamples,sasl]},
+        {sys_config, "./config/sys.config"},
+        {vm_args, "./config/vm.args"},
+        {dev_mode, false},
+        {include_erts, false},
+        {extended_start_script, true}]
+}.

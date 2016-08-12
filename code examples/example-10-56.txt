@@ -1,0 +1,13 @@
+iex(1)> alias Experimental.GenStage
+   Experimental.GenStage
+iex(2)> {:ok, kitchen} = GenStage.start_link(Kitchen, {10,10,10})
+   {:ok, #PID<0.220.0>}
+iex(3)> {:ok, service1} = GenStage.start_link(Service, :idle)
+   {:ok, #PID<0.222.0>}
+iex(4)> {:ok, patron1} = GenStage.start_link(Patron, 1000)
+   {:ok, #PID<0.224.0>}
+iex(5)> GenStage.sync_subscribe(service1, to: kitchen)
+   {:ok, #Reference<0.0.4.1299>}
+iex(6)> GenStage.sync_subscribe(patron1, to: service1)
+   {:ok, #Reference<0.0.4.1305>}
+   [:nothingtoserve]

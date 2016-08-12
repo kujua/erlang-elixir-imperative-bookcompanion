@@ -1,0 +1,3 @@
+-define (DARDB, "dar").
+% ...
+DB = ?DARDB

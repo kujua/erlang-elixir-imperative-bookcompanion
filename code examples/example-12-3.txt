@@ -1,0 +1,7 @@
+[{kernel,
+  [{distributed, [{myapp, 5000, [sayhello1@localhsot, {sayhello2@localhsot, sayhello3@localhsot}]}]},
+   {sync_nodes_mandatory, [sayhello2@cave, sayhello2@cave]},
+   {sync_nodes_timeout, 5000}
+  ]
+ }
+].

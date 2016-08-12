@@ -1,0 +1,2 @@
+mix app.tree --format dot
+dot -Tpng app_tree.dot -o app_tree.png

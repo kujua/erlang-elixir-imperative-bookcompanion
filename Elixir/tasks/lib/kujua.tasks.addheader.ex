@@ -87,7 +87,7 @@ defmodule Mix.Tasks.Kujua.AddHeader do
 
   def delete_existing_header(file, true) do
     split = String.split(file,"\"\"\"")
-    Enum.at(split,4)
+    Enum.at(split,5)
   end
   def delete_existing_header(file, false) do
     file

@@ -1,0 +1,2 @@
+iex –sname sayhello1 -pa _build/dev/lib/sayhello/ebin/ 
+    –app sayhello –erl “-config config/sayhello1”

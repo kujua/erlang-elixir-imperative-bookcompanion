@@ -1,0 +1,19 @@
+$ mix phoenix.routes
+page_path  GET   /                               DarApi.PageController :index
+ api_path  GET   /api/assets                     DarApi.ApiController :index
+ api_path  GET   /api/assets/:id                 DarApi.ApiController :show
+ api_path  POST  /api/assets                     DarApi.ApiController :create
+ api_path  GET   /api/assets/:id/text            DarApi.ApiController
+                                                    :get_text_for_id
+ api_path  GET   /api/assets/:id/images          DarApi.ApiController
+                                                    :get_images_for_id
+ api_path  POST  /api/assets/:id/text/:textid    DarApi.ApiController
+                                                    :update_text_for_id
+ api_path  POST  /api/assets/:id/image/:imageid  DarApi.ApiController
+                                                    :update_image_for_id
+ api_path  POST  /api/assets/:id/text            DarApi.ApiController
+                                                    :post_text_for_id
+ api_path  POST  /api/assets/:id/image           DarApi.ApiController
+                                                    :post_image_for_id
+ api_path  GET   /api/assets/:id/document        DarApi.ApiController
+                                                    :get_document_for_id

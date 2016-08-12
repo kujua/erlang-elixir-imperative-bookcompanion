@@ -1,0 +1,7 @@
+iex(1)> c = Currying.doubler
+#Function<0.125872190/1 in Currying.doubler/0>
+iex(2)> c.(1)
+2
+iex(3)> c.("a")
+** (FunctionClauseError) no function clause matching in anonymous fn/1 in Currying.doubler/0
+    currying.ex:18: anonymous fn("a") in Currying.doubler/0

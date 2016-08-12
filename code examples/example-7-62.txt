@@ -1,0 +1,3 @@
+* calendar (Hex package) (mix)
+  locked at 0.16.0 (calendar) cf2dec9f
+  the dependency was built with an out-of-date Elixir version, run "mix deps.compile"

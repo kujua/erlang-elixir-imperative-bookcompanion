@@ -1,0 +1,8 @@
+iex(1)> EventManager.start_link
+{:ok, #PID<0.187.0>}
+iex(2)> EventHandler.start_link
+{:ok, #PID<0.189.0>}
+iex(4)> EventManager.sync_notify "first"
+
+iex(5)> EventManager.sync_notify "main"
+["second"]

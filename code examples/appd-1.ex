@@ -1,0 +1,1 @@
+varstring = "hello world"

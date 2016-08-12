@@ -1,0 +1,28 @@
+iex(1)> {:ok, pid} = GenEvent.start_link([])
+{:ok, #PID<0.187.0>}
+iex(2)> GenEvent.add_handler(pid, GenEventExample, [])
+:ok
+iex(3)> GenEvent.notify(pid, "first")
+Event: first
+:ok
+Old State: []
+iex(4)> GenEvent.notify(pid, "main")
+Event: main
+:ok
+Old State: "first"
+iex(5)> GenEvent.notify(pid, "dessert")
+Event: dessert
+:ok
+Old State: "main"
+iex(6)> GenEvent.remove_handler(pid,GenEventExample,:ok)
+:ok
+iex(7)> GenEvent.notify(pid, "")
+:ok
+iex(8)> GenEvent.stop pid
+:ok
+iex(9)> GenEvent.notify(pid, "")
+:ok
+iex(10)> GenEvent.sync_notify(pid, "")
+** (exit) no process
+    (stdlib) gen.erl:177: :gen.do_call/4
+    (elixir) lib/gen_event.ex:635: GenEvent.rpc/2

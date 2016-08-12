@@ -1,0 +1,1 @@
+mix phoenix.new phoenixskeleton --binary-id

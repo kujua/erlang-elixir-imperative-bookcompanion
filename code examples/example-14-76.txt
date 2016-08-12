@@ -1,0 +1,3 @@
+warning: the variable "v1" is unsafe as it has been set inside
+a case/cond/receive/if/&&/||.
+Please explicitly return the variable value instead.

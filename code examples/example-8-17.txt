@@ -1,0 +1,5 @@
+$ mix release
+   Building release with MIX_ENV=dev.
+   ==> The release for elixirexamples-1.0.0 is ready!
+   ==> You can boot a console running your release with
+       `$ rel/elixirexamples/bin/elixirexamples console`

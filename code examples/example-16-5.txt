@@ -1,0 +1,18 @@
+1> rp(registered()).
+[user,inets_sup,user_drv,erlangexamples_server,
+ erlangexamples_sup,code_server,application_controller,
+ standard_error,sasl_sup,erl_prim_loader,httpd_sup,
+ rebar_agent,kernel_safe_sup,erts_code_purger,inet_db,
+ release_handler,tls_connection_sup,ssl_sup,alarm_handler,
+ rex,standard_error_sup,global_group,tftp_sup,kernel_sup,
+ sasl_safe_sup,global_name_server,httpc_rebar,file_server_2,
+ ssl_manager,error_logger,httpc_sup,init,disk_log_sup,
+ httpc_profile_sup,disk_log_server,httpc_manager,
+ httpc_handler_sup,ssl_listen_tracker_sup,ftp_sup]
+ok
+2> erlang:process_info(whereis(erlangexamples_server), memory).
+{memory,2848}
+3> erlang:process_info(whereis(erlangexamples_sup), memory).
+{memory,2888}
+4> erlang:process_info(whereis(sasl_sup), memory).
+{memory,7080}

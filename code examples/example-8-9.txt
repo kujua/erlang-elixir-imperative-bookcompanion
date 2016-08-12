@@ -1,0 +1,12 @@
+$ rebar3 release
+===> Verifying dependencies...
+===> Compiling erlangexamples
+===> Starting relx build process ...
+===> Resolving OTP Applications from directories:
+          ~/Projects/bookcompanion-ee/Erlang/erlangexamples/_build/default/lib
+          ~/Projects/bookcompanion-ee/Erlang/erlangexamples/apps
+          /usr/local/Cellar/erlang/19.0.2/lib/erlang/lib
+          ~/Projects/proper
+          ~/Projects/bookcompanion-ee/Erlang/erlangexamples/_build/default/rel
+===> Resolved erlangexamples-1.0.0
+===> release successfully created!

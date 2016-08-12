@@ -1,0 +1,5 @@
+$ docker ps
+IMAGE       COMMAND                  STATUS          PORTS
+elixir      "iex"                    Up 43 seconds
+mongo       "/entrypoint.sh mongo"   Up 43 seconds   0.0.0.0:27017->27017/tcp
+postgres    "/docker-entrypoint.s"   Up 43 seconds   0.0.0.0:5432->5432/tcp

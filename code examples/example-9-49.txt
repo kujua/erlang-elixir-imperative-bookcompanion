@@ -1,0 +1,13 @@
+1> sayhello:start().
+Recipient received nomessagedefined
+2: "Hello"
+<0.36.0>
+2: "Hello"
+Recipient received Hello
+2: "Hello"
+Recipient received Hello
+2: "Hello"
+Recipient received Hello
+Process arity 2 'say_hello' finished
+Recipient received Hello
+Recipient process finished

@@ -1,5 +1,5 @@
 pizza_toppings_map() ->
-		#{{tomatosauce,spoon} => 3,
+    #{{tomatosauce,spoon} => 3,
       {mozzarella,slices} => 8,
       {ham,slices} => 6,
       {mushroom,spoon} => 2,

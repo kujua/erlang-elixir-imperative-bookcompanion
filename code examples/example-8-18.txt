@@ -1,0 +1,13 @@
+$ ./elixirexamples start
+$ epmd -names
+   epmd: up and running on port 4369 with data:
+   name elixirexamples at port 62762
+$ ./elixirexamples remote_console
+   Erlang/OTP 19 [erts-8.0.2] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+   Interactive Elixir (1.3.2) - press Ctrl+C to exit (type h() ENTER for help)
+   iex(elixirexamples@127.0.0.1)1>
+
+$ empd -names
+   epmd: up and running on port 4369 with data:
+   name remsh-elixirexamples at port 62777
+   name elixirexamples at port 62762

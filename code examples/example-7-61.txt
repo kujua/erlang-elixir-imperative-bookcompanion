@@ -1,0 +1,10 @@
+app (built-in): Complete OTP Application structure.
+cmake (built-in): Standalone Makefile for building C/C++ in c_src
+cowboyapp (custom): Cowboy OTP-based application.
+escript (built-in): Complete escriptized application structure
+kujua_ctsuite (custom): Common Test Suite
+kujua_eunit (custom): EUnit Test Suite
+kujua_gsrv (custom): OTP gen_server
+lib (built-in): Complete OTP Library application (no processes) structure
+plugin (built-in): Rebar3 plugin project structure
+release (built-in): OTP Release structure for executable programs

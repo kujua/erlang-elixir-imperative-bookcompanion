@@ -1,0 +1,1 @@
+application:which_applications().

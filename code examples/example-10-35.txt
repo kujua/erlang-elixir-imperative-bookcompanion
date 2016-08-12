@@ -1,0 +1,14 @@
+mix help phoenix.new
+
+Options
+
+  • --app - the name of the OTP application
+  • --module - the name of the base module in the generated skeleton
+  • --database - specify the database adapter for ecto. Values can be
+    postgres, mysql, mssql, sqlite or mongodb. Defaults to postgres
+  • --no-brunch - do not generate brunch files for static asset building.
+    When choosing this option, you will need to manually handle JavaScript
+    dependencies if building HTML apps
+  • --no-ecto - do not generate ecto files for the model layer
+  • --no-html - do not generate HTML views.
+  • --binary-id - use binary_id as primary key type in ecto models

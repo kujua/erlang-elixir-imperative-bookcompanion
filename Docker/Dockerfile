@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.9.18
 MAINTAINER Wolfgang Loder @wolfgang_loder
 
-ENV REFRESHED_AT 2016-02-18
+ENV REFRESHED_AT 2016-08-08
 
 RUN echo /root /etc/container_environment/HOME
 
@@ -14,8 +14,8 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Set versions
-ENV ERLANG_VERSION=1:18.2
-ENV ELIXIR_VERSION=1.2.1
+ENV ERLANG_VERSION=1:19.0
+ENV ELIXIR_VERSION=1.3.2
 
 WORKDIR /tmp
 
@@ -30,9 +30,9 @@ RUN apt-get update && apt-get install -y \
     wget
 
 # Setup Erlang
-RUN wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+RUN wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb &&  dpkg -i erlang-solutions_1.0_all.deb
 RUN apt-get update
-RUN apt-get install erlang=$ERLANG_VERSION -y \
+RUN apt-get install erlang -y \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

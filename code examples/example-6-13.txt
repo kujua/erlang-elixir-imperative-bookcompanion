@@ -1,0 +1,8 @@
+$ docker-compose down
+Stopping docker_elixir_run_1 ... done
+Stopping docker_mongo_1 ... done
+Stopping docker_postgres_1 ... done
+Removing docker_elixir_run_1 ... done
+Removing docker_mongo_1 ... done
+Removing docker_postgres_1 ... done
+Removing network docker_default

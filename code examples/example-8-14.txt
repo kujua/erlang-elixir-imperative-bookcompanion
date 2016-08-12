@@ -1,0 +1,16 @@
+$ epmd -names
+   epmd: up and running on port 4369 with data:
+$ ./erlangexamples start
+$ epmd -names
+   epmd: up and running on port 4369 with data:
+   name erlangexamples at port 60477
+$ ./erlangexamples remote_console
+   Erlang/OTP 19 [erts-8.0.2] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+   Eshell V8.0.2  (abort with ^G)
+   (erlangexamples@WL)1>
+
+$ epmd -names
+   epmd: up and running on port 4369 with data:
+   name remshc958bdf4-erlangexamples at port 60495
+   name erlangexamples at port 60477

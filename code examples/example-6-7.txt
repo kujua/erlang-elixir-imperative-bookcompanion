@@ -1,0 +1,1 @@
+docker build -t bookcompanionee:1.0 .

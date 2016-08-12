@@ -1,0 +1,26 @@
+1> {ok, Pid} = gen_event:start().
+  {ok,<0.130.0>}
+2> gen_event:add_handler(Pid, eventhandler, []).
+  ok
+3> gen_event:notify(Pid, "first").
+  Old State: {state,"undefined"}
+  Event: first
+4> gen_event:notify(Pid, "main").
+  Old State: {state,"first"}
+  Event: main
+5> gen_event:notify(Pid, "dessert").
+  Old State: {state,"main"}
+  Event: dessert
+6> gen_event:delete_handler(Pid, eventhandler, ok).
+  State: {state,"dessert"}
+  Terminate
+7> gen_event:notify(Pid, []).
+  ok
+8> gen_event:stop(Pid).
+  ok
+9> gen_event:notify(Pid, []).
+  ok
+10> gen_event:sync_notify(Pid, []).
+  ** exception exit: noproc
+     in function  gen:do_call/4 (gen.erl, line 177)
+     in call from gen_event:rpc/2 (gen_event.erl, line 197)

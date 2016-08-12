@@ -1,0 +1,4 @@
+iex(1)> Assignment.assignment_warning true,21
+{:processed, 42}
+iex(2)> Assignment.assignment_warning false,21
+{:notprocessed, 21}

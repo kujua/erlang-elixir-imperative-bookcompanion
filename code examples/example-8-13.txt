@@ -1,0 +1,4 @@
+$ ./erlangexamples
+Usage: erlangexamples {start|start_boot <file>|foreground|stop|restart
+          |reboot|pid|ping|console|console_clean|console_boot <file>
+          |attach|remote_console|upgrade|escript|rpc|rpcterms|eval}
